@@ -1,0 +1,129 @@
+body {
+	background: #f9e933;
+	font-size: 100%;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+header, main, footer {
+	min-width: 855px;
+}
+
+header .container, main .container, footer .container{
+	max-width: 855px;
+	margin: auto;
+}
+
+header {
+	padding: 40px 0;
+	background: white;
+	overflow: auto;
+	border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+	float: left;
+	width: 570px;
+	color: rgb(156, 22, 22);
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-style: italic;
+}
+
+h2, h3 {
+	margin-top: 40px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+header nav {
+	float: right;
+	width: 285px;
+}
+
+main {
+	background: white;
+	display: block;
+	overflow: hidden;
+}
+
+.main-left {
+	float: left;
+	width: 570px;
+}
+
+.main-left p {
+	margin-top: 10px;
+	width: 400px;
+}
+
+.main-right {
+	float: right;
+	width:285px;
+}
+
+footer {
+	height: 100%;
+	overflow: auto;
+}
+
+footer .container {
+	margin-top: 40px;
+}
+
+.contact {
+	float: left;
+	width: 570px;
+}
+
+.sitemap {
+	float: right;
+	width:285px;
+	overflow: hidden;
+}
+
+.footer-companyname {
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(156, 22, 22);
+}
+
+.footer-navright {
+	float: right;
+	width: 140px;
+}
+
+.footer-navleft {
+	float: left;
+	width: 145px;
+}
