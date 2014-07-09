@@ -1,14 +1,9 @@
-var main = function () {
+var main = function (toDoObjects) {
 	"use strict";
 
-	var toDos = [
-		"Finish writing this book",
-		"Take Gracie to the park",
-		"Answer emails",
-		"Prep for Monday's class",
-		"Make up some new ToDos",
-		"Get Groceries"
-	];
+	var toDos = toDoObjects.map(function (toDo) {
+		return toDo.description
+	});
 
 	$(".tabs a span").toArray().forEach(function (element) {
 		var $element = $(element);
@@ -35,6 +30,9 @@ var main = function () {
 					$content.append($("<li>").text(todo));
 				});
 			} else if ($element.parent().is(":nth-child(3)")) {
+				// this is the tag tab code
+				console.log("the tags tab was clicked!");
+			} else if ($element.parent().is(":nth-child(4)")) {
 				$input = $("<input>");
 				$button = $("<button>").text("+");
 
@@ -57,4 +55,8 @@ var main = function () {
 	$(".tabs a:first-child span").trigger("click");
 };
 
-$(document).ready(main);
+$(document).ready(function () {
+	$.getJSON("todos.json", function (toDoObjects) {
+		main(toDoObjects);
+	});
+});
